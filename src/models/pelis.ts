@@ -1,4 +1,4 @@
-import { number } from "joi";
+// import { number } from "joi";
 import { Schema, Types, model, Model } from "mongoose";
 import { Peli } from "../interface/peli.interface"
 

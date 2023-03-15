@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.router = void 0;
+const express_1 = require("express");
+const pelis_1 = require("../controllers/pelis");
+const log_1 = require("../middleware/log");
+const router = (0, express_1.Router)();
+exports.router = router;
+router.get("/:id", pelis_1.get_peli);
+router.get("/", log_1.log_middleware, pelis_1.get_pelis);
+router.put("/:id", pelis_1.update_peli);
+router.post("/", pelis_1.post_peli);
+router.delete("/:id", pelis_1.delete_peli);

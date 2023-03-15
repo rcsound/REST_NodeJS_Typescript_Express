@@ -2,7 +2,9 @@ import { Peli } from "../interface/peli.interface";
 import peli_model from "../models/pelis";
 
 const call_insert_pelis = async (peli: Peli) => {
+    // console.log("Llegamos al Servicio")
     const response_insert = await peli_model.create(peli);
+    // console.log("insertamos la peli")
     return response_insert;
 };
 

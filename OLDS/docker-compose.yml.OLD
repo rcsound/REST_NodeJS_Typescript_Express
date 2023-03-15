@@ -1,0 +1,34 @@
+version: "3.7"
+
+services:
+  chanchito:
+    build: .
+      # context: .
+      # dockerfile: Dockerfile
+      # target: base
+    # volumes:
+    #   - ./src:/home/app/src
+    #   - ./nodemon.json:/home/app/nodemon.json
+    # container_name: chanchito
+    # expose:
+    #   - "3002"
+    ports:
+      - "3002:3002"
+    # command: npm run dev
+    links:
+      - monguito
+
+  monguito:
+    image: mongo
+    ports:
+      - "27017:27017"
+    # environment:
+      # - MONGO_INITDB_ROOT_USERNAME=nico
+      # - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - mongo-data:/data/db
+      # mysql -> /var/lib/mysql
+      # postgres -> /var/lib/postgresql/data
+
+volumes:
+  mongo-data:
