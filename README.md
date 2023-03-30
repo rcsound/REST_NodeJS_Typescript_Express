@@ -3,6 +3,8 @@ Para poder correr la API REST necesitas tener instalado:
 - npm v9.5.0 from
 https://nodejs.org/en
 
+
+
 DEPENDENCIES
 - "bcryptjs": "2.4.2",
 - "cors": "^2.8.5",
@@ -15,7 +17,9 @@ DEPENDENCIES
 - "node-fetch": "^3.3.1",
 - "ts-jest-resolver": "^2.0.1"
 
-instalar en terminal usando npm i "dependencia@version"' ejemplo npm i bcrypts@2.4.2
+instalar en terminal usando "npm i 'dependencia@version'" // ejemplo "npm i bcrypts@2.4.2"
+
+
 
 DEV DEPENDENCIES
 - "@babel/core": "^7.21.3",
@@ -37,7 +41,9 @@ DEV DEPENDENCIES
 - "ts-node": "^10.9.1",
 - "typescript": "^4.9.5"
 
-instalar en terminal usando npm i "devdependencia@version"' -D, ejemplo npm i @babel/core@7.21.3 -D
+instalar en terminal usando,  "npm i 'devdependencia@version' -D" // ejemplo "npm i @babel/core@7.21.3 -D"
+
+
 
 MONGO_DB v6.0.4
 from https://www.mongodb.com/download-center/community/releases/archive
@@ -49,6 +55,6 @@ Ejecucion:
 2 - Dentro del entorno virtual ejecutar , "npm run dev" para inicializar la API y monitorearla en tiempo de ejecucion (?)
 3 - al recibir el mensaje "Connection Ready" la API esta funcionando
 
-Por defecto la API funciona sobre el puerto 3003, para modificarlo ver las variables de entorno en ./.env
+NOTA - Por defecto la API funciona sobre el puerto 3003, para modificarlo ver las variables de entorno en ./.env
 
 
