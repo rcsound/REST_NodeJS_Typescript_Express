@@ -17,7 +17,7 @@ const get_pelis = async (req:Request, res:Response) => {
     try{
         const response = await call_get_pelis();
         res.send(response);
-        // console.log(response);
+        console.log(response);
     } catch (e){
         handle_http(res, 'ERROR_GET_ITEMS');
     }
